@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad Viewer</title>
+  <style>
+    body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #f0f0f0; font-family: Arial, sans-serif; }
+    #backButton { display:none; background: linear-gradient(45deg, #4e54c8,#8f94fb); padding:15px 30px; border:none; border-radius:25px; color:white; font-size:16px; cursor:pointer; margin-top:20px; transition: ease 0.3s; }
+    #backButton:hover { opacity:0.8; }
+  </style>
+</head>
+<body>
+  <script src='//libtl.com/sdk.js' data-zone='9584277' data-sdk='show_9584277'></script>
+  <button id="backButton" onclick="goBack()">⬅️ الرجوع</button>
+  <script>
+    function goBack(){ window.history.back(); }
+    window.onload = ()=> setTimeout(()=> document.getElementById('backButton').style.display = 'inline-block',10000);
+  </script>
+</body>
+</html>
